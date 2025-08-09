@@ -42,6 +42,34 @@ int main() {
     printf("Esquerda\n");
     r++;
   };
+
+
+  printf("\n\n\n");
+  // nivel aventureiro: o cavalo se mexe para baixo e para a esquerda.
+
+  // Cavalo
+  // for e do-while
+
+  // cavalo se move 3 vezes para a esquerda, e 4 para baixo, formando um L
+  int moves_down = 5;
+  int moves_left = 0;
+  printf("Cavalo:\n");
+  for (int j = 1; j < 7; j++) {
+    
+    do {
+      if (j > 2) {
+	printf("Baixo\n");
+	moves_down--;
+      } else if (j < 2) {
+	printf("Esquerda\n");
+      }
+      moves_left++;
+    } while (moves_left < 3 );
+    
+    
+  }
+
+
   
   return 0; 
 }
